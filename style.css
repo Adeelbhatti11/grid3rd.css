@@ -1,0 +1,51 @@
+.box{
+    margin-left: 200px;
+    width: 860px;
+    height: 900px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 250px  250px;
+    grid-gap: 10px;
+    /* grid-auto-flow: column dense; */
+    grid-auto-rows: 150px;
+    /* align-items: center;
+    justify-items:center; */
+    align-content: center;
+    justify-content:space-between;
+}
+.box1{
+    background-color: aqua;
+    /* align-self: stretch;
+    justify-self: center; */
+    order: 3;
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.box1> div{
+    background-color: blueviolet;
+}
+.box2{
+    background-color: rgb(0, 255, 128);
+    order: 5;
+}
+.box3{
+    background-color: rgb(217, 0, 255); 
+    order: 4;
+
+}
+.box4{
+    background-color: rgb(157, 255, 0);
+    order: 2;
+}
+.box5{
+    background-color: rgb(246, 255, 0);
+    order: 6;
+}
+.box6{
+    background-color: rgb(255, 72, 0);
+    align-self: start;
+    justify-self: end;
+    order: 1;
+}
